@@ -1,0 +1,382 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/07/2015, 09:28:00 PM
+    Author     : lfelipeqn
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    position: relative;
+    background: url(../img/fondo.png) repeat 20px 0;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;   
+}
+
+#logo{
+    position: absolute;
+    top: 5px;
+    left: 10%;
+}
+
+@-ms-keyframes spin { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(-360deg); 
+        }
+    }
+    @-moz-keyframes spin { 
+        from { 
+            -moz-transform: rotate(0deg); 
+        } to { 
+            -moz-transform: rotate(-360deg); 
+        }
+    }
+    @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(-360deg); 
+        }
+    }
+    @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(-360deg); 
+        }
+    }
+
+
+@-ms-keyframes spin2 { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(360deg); 
+        }
+}
+@-moz-keyframes spin2 { 
+    from { 
+        -moz-transform: rotate(0deg); 
+    } to { 
+        -moz-transform: rotate(360deg); 
+    }
+}
+@-webkit-keyframes spin2 { 
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}
+@keyframes spin2 { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+    
+    
+@-ms-keyframes grow { 
+    from { 
+        -ms-transform: height(36px); 
+    } to { 
+        -ms-transform: height(100px); 
+    }
+}
+@-moz-keyframes grow { 
+    from { 
+        -moz-transform: height(36px); 
+    } to { 
+        -moz-transform: height(100px); 
+    }
+}
+@-webkit-keyframes grow { 
+    from { 
+        -webkit-transform: height(36px); 
+    } to { 
+        -webkit-transform: height(100px); 
+    }
+}
+@keyframes grow { 
+    from { 
+        transform: height(36px); 
+    } to { 
+        transform: height(100px); 
+    }
+}
+
+
+
+
+
+.seccion{
+    display: table;
+    background: url(../img/boton.png);
+    background-repeat: no-repeat;
+    min-width: 91px;
+    min-height: 72px;
+    width: 91px;
+    height: 72px;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.seccion span{
+    display: table-cell;
+    position: relative;
+    font-size: 0.8em;
+    color: #681427;
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.seccion:hover{
+    cursor:pointer;
+    background: url(../img/boton-2.png);
+    background-repeat:no-repeat;
+}
+
+.seccion span:hover{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+#ciclo{
+    position: relative;
+    display: block;
+    top:210px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 439px;
+    height: 439px;
+}
+
+#ciclo:before{
+    background-image: url(../img/ciclo.png);
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    width: 439px;
+    height: 439px;
+    
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 50000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 50000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 50000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#flechas{
+        position: relative;
+        display: block;
+        min-width: 439px;
+        min-height: 439px;
+}
+
+#flechas:before{
+        position: absolute;
+        content:"";
+        display: block;
+        background-image: url(../img/flechas.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-width: 439px;
+        min-height: 439px;
+        
+        -webkit-animation-name: spin2;
+        -webkit-animation-duration: 50000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+
+        -moz-animation-name: spin2;
+        -moz-animation-duration: 50000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+
+        -ms-animation-name: spin2;
+        -ms-animation-duration: 50000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+
+        animation-name: spin2;
+        animation-duration: 50000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        
+}
+
+
+
+
+#menu div{
+    position: relative;
+    display: table;
+    background-image: url(../img/boton.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#menu div:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+
+#menu div span{
+    position: relative;
+    display: table-cell;
+    width: 91px;
+    height: 72px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+#opcion0{top:41px;left:168px;}
+#opcion1{top:71px;left:309px;}
+#opcion2{top:45px;left:175px;}
+#opcion3{top:89px;left:255px;}
+#opcion4{top:9px;left:79px;}
+#opcion5{top:-219px;left:49px;}
+
+
+#certificaciones{
+    position:relative;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    border:solid 3px #8c2f1d;
+    min-width: 150px;
+    min-height: 310px;
+    left: 50px;
+    top: -180px;
+    padding: 8px;
+}
+
+#certificaciones img{
+    display: block;
+    margin: auto;
+}
+
+#cert-titulo{
+    position: relative;
+    background-color: #8c2f1d;
+    width: 20px;
+    height: 230px;
+    left:228px;
+    top: -480px;
+    border-bottom-right-radius:10px;
+    border-top-right-radius:10px;
+    padding-top: 12px;
+    padding-left: 2px;
+}
+
+#opciones{
+    position: absolute;
+    right: 80px;
+    top: 30px;
+}
+
+#opciones img:hover{
+    cursor: pointer;
+}
+
+#opciones div{
+    color: white;
+    background-color: #8c2f1d;
+    border-radius: 30px;
+    width: 100px;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#opciones img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#descripcion{
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+    border: solid grey 2px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 700px;
+    height: 36px;
+}
+
+#descripcion div{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    background-color: #681427;
+    padding: 5px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#descripcion:hover{
+    cursor:pointer;
+    height: 140px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+    #descripcion:hover{height: 255px;}
+    #ciclo{transform: scale(0.8);top:150px;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    #descripcion:hover{height: 190px;}
+    #ciclo{top:170px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .contenedor{width: 80%;}
+    #ciclo{top: 170px;}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .contenedor{width: 80%;}
+    #ciclo{top: 83px;}
+    
+}
+
+
+@media screen and (min-width: 1200px){
+    .contenedor{width: 80%;}
+    #ciclo{top: 83px;}
+}
