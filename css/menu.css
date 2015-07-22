@@ -1,0 +1,93 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/07/2015, 07:10:39 PM
+    Author     : lfelipeqn
+*/
+
+h3{ text-align: center; color:#681427}
+h4{ color:#681427; margin-top: 20px;margin-bottom:20px;}
+h5{ color:#681427; margin-top: 10px;margin-bottom:10px;}
+li{ max-width: 82%; text-align: justify;}
+.pre-menu{
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 84%;
+    min-height: 60px;
+    background-image: url(../img/fondo-2.png);
+}
+
+.menu{margin-bottom: 10px;}
+.menu-desc{
+    vertical-align: middle;
+    display: block;
+    border-radius: 10px;
+    background-color: #681427;
+    width: 84%;
+    min-height: 200px;
+    padding: 10px;
+    text-align: justify;
+    color:white;  
+    margin-bottom: 15px;
+}
+
+.logo2{
+    display: table-row;
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor2{
+    background: url(../img/fondo.png) repeat 20px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sub-titulo{
+    border-radius: 25px;
+    background-color: #681427;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    font-size: 1.3em;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.sub-titulo-2{
+    border-radius: 25px;
+    background-color: #681427;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    font-size: 0.8em;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.seccion{
+    position: relative;
+    background-image: url(../img/seccion.png);
+    background-repeat: no-repeat;
+    width: 248px;
+    height: 235px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    text-align: center;
+}
+
+.seccion span{
+    position: relative;
+    margin: 0 auto;
+    left: 10px;
+    color:white;
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: bold;
+    top:95px;
+}

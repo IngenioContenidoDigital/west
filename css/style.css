@@ -11,20 +11,23 @@ and open the template in the editor.
 body{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .contenedor{
-    position: relative;
     background: url(../img/fondo.png) repeat 20px 0;
     margin: auto;
     overflow: hidden;
-    width: 100%;   
+    width: auto;   
+    min-height: 650px;
 }
 
 #logo{
-    position: absolute;
+    position: relative;
+    display: inline-block;
     top: 5px;
-    left: 10%;
+    float: left;
+    margin-left: 20px;
 }
 
 @-ms-keyframes spin { 
@@ -116,60 +119,20 @@ body{
     }
 }
 
-
-
-
-
-.seccion{
-    display: table;
-    background: url(../img/boton.png);
-    background-repeat: no-repeat;
-    min-width: 91px;
-    min-height: 72px;
-    width: 91px;
-    height: 72px;
-    text-align: center;
-    margin-left: auto;
-    margin-right:auto;
-}
-
-.seccion span{
-    display: table-cell;
-    position: relative;
-    font-size: 0.8em;
-    color: #681427;
-    vertical-align: middle;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.seccion:hover{
-    cursor:pointer;
-    background: url(../img/boton-2.png);
-    background-repeat:no-repeat;
-}
-
-.seccion span:hover{
-    font-size: 1em;
-    font-weight: bold;
-    color: black;
-}
-
-#ciclo{
-    position: relative;
+#contenedor-ciclo{
     display: block;
-    top:210px;
-    margin-left:auto;
-    margin-right: auto;
     width: 439px;
-    height: 439px;
+    max-height: 439px;
+    margin: auto;
 }
+
 
 #ciclo:before{
+    position:absolute;
+    display: table;
     background-image: url(../img/ciclo.png);
     background-repeat: no-repeat;
     content: "";
-    position: absolute;
     width: 439px;
     height: 439px;
     
@@ -192,13 +155,6 @@ body{
     animation-duration: 50000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-}
-
-#flechas{
-        position: relative;
-        display: block;
-        min-width: 439px;
-        min-height: 439px;
 }
 
 #flechas:before{
@@ -233,8 +189,13 @@ body{
         
 }
 
-
-
+#menu{
+    position:absolute;
+    display: block;
+    margin: 40px;
+    width: 339px;
+    height: 350px;
+}
 
 #menu div{
     position: relative;
@@ -260,49 +221,58 @@ body{
     font-size: 0.8em;
 }
 
-#opcion0{top:41px;left:168px;}
-#opcion1{top:71px;left:309px;}
-#opcion2{top:45px;left:175px;}
-#opcion3{top:89px;left:255px;}
-#opcion4{top:9px;left:79px;}
-#opcion5{top:-219px;left:49px;}
+#opcion0{top:0px;left:108px;}
+#opcion1{top:0px;left:250px;}
+#opcion2{top:-5px;left:130px;}
+#opcion3{top:15px;left:230px;}
+#opcion4{top:-15px;left:50px;}
+#opcion5{top:-240px;left:0px;}
 
 
-#certificaciones{
-    position:relative;
-    display: inline-block;
-    background-color: white;
-    border-radius: 10px;
-    border:solid 3px #8c2f1d;
-    min-width: 150px;
-    min-height: 310px;
-    left: 50px;
-    top: -180px;
-    padding: 8px;
+#contenedor-cert{
+    position: absolute;
+    display: table;
+    float: left;
+    margin-left: 1px;
+    top: 250px;
+    /*width: 222px;*/
+    height: 300px;
+    overflow: hidden;
 }
 
-#certificaciones img{
-    display: block;
-    margin: auto;
+#certificaciones{
+    float: left;
+    content: "";
+    display: inline-block;
+    border-radius: 10px;
+    border: solid #8c2f1d 2px;
+    min-height: 350px;
+    /*min-width: 200px;*/
+    background-color: white;
+    background-image: url(../img/certificados.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
 }
 
 #cert-titulo{
-    position: relative;
+    float:right ;
+    display: inline-block;
     background-color: #8c2f1d;
-    width: 20px;
+    width: 22px;
     height: 230px;
-    left:228px;
-    top: -480px;
     border-bottom-right-radius:10px;
     border-top-right-radius:10px;
     padding-top: 12px;
-    padding-left: 2px;
+    padding-left: 1px;
+    margin-top: 30px;
 }
 
 #opciones{
-    position: absolute;
-    right: 80px;
+    position: relative;
+    display: inline-block;
+    float:right;
     top: 30px;
+    margin-right: 20px;
 }
 
 #opciones img:hover{
@@ -351,32 +321,41 @@ body{
 
 #descripcion:hover{
     cursor:pointer;
-    height: 140px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px){
-    #descripcion:hover{height: 255px;}
-    #ciclo{transform: scale(0.8);top:150px;}
+    #ciclo{transform: scale(0.8);}
+    #contenedor-ciclo{margin-top: 170px;}
+    #descripcion:hover{height: 320px;}
+    #contenedor-cert{width: 22px;}
+    #certificaciones{width: 0px; border:none;}
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px){
+    #contenedor-ciclo{margin-top: 180px;}
     #descripcion:hover{height: 190px;}
-    #ciclo{top:170px;}
+    #contenedor-cert{width: 22px;}
+    #certificaciones{width: 0px; border:none;}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    .contenedor{width: 80%;}
-    #ciclo{top: 170px;}
+    #contenedor-ciclo{margin-top: 120px;}
+    #descripcion:hover{height: 130px;}
+    #contenedor-cert{width: 222px;}
+    #certificaciones{width: 200px;}
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
-    .contenedor{width: 80%;}
-    #ciclo{top: 83px;}
-    
+    #contenedor-ciclo{margin-top: 100px;}
+    #descripcion:hover{height: 130px;}
+    #contenedor-cert{width: 222px;}
+    #certificaciones{width: 200px;}
 }
 
-
 @media screen and (min-width: 1200px){
-    .contenedor{width: 80%;}
-    #ciclo{top: 83px;}
+    #ciclo{transform: scale(1.1);}
+    #contenedor-ciclo{margin-top: 100px;}
+    #descripcion:hover{height: 130px;}
+    #contenedor-cert{width: 222px;}
+    #certificaciones{width: 200px;}
 }
