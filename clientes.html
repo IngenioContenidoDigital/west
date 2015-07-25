@@ -9,9 +9,14 @@
     <title>West Ingenieria</title>
 
     <!-- Bootstrap -->
+    
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
     <link href="css/menu.css" rel="stylesheet"> 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,10 +29,8 @@
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
-            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;">Suministros</span></div>
+            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;">Nuestros Clientes:</span></div>
             <div>
-                <h3>&nbsp;</h3>
-                <h3>&nbsp;</h3>
                 <h3>&nbsp;</h3>
                 <h3>&nbsp;</h3>
                 <h3>&nbsp;</h3>
@@ -39,36 +42,42 @@
             <div class="pre-menu"></div>
             <nav class="navbar menu">
                 <a href="ingenieria.html"><button type="button" class="btn btn-default navbar-btn">Ingenieria</button></a>
+                <a href="suministros.html"><button type="button" class="btn btn-default navbar-btn">Suministros</button></a>
                 <a href="obras.html"><button type="button" class="btn btn-default navbar-btn">Obras</button></a>
                 <a href="servicios.html"><button type="button" class="btn btn-default navbar-btn">Servicios</button></a>
                 <a href="mantenimiento.html"><button type="button" class="btn btn-default navbar-btn">Mantenimiento</button></a>
                 <a href="gerencia.html"><button type="button" class="btn btn-default navbar-btn">Gerencia</button></a>
-                <a href="clientes.html"><button type="button" class="btn btn-default navbar-btn">Clientes</button></a>
                 <a href="contacto.php"><button type="button" class="btn btn-default navbar-btn">Contacto</button></a>
             </nav>
-            <div class="menu-desc">
-                Suministramos equipos de fuerza y control marca AllenBradley, Schneider Electric, ABB, entro otros. Proveemos tableros de fuerza y control con certificación UL o fabricados nacionalmente.
-                <p>Los tableros pueden tener grado de protección IPoNema de acuerdo a las necesidades y especificaciones técnicas suministradas por el cliente.</p>
-                <p>Gestionamos la adquisición de instrumentos y materiales de construcción en las mejores marcas del mercado y con los mejores tiempos de entrega.</p>
-            </div>
-            <p><span class="sub-titulo">Experiencia:</span></p>
-            <h4>MONTAJE, CALIBRACIÓN Y CONFIGURACIÓN DE INSTRUMENTOS Y PLC</h4>
             <div>
-                <ol>
-                    <li>Cajas Hoffman para Radios de pozos de bombeo progresivo (PCP). Campo LA CIRA-INFANTAS (OXY)</li>
-                    <li>Suministro medidor multifásico Marca: KAM para la LCI05. Campo LA CIRA-INFANTAS (OXY).</li>
-                    <li>Suministro de Kit sistema de presurización tablero torres de sorbedoras TTE 1001-1002 Planta Deshidratadora. Campo LA CIRA-INFANTAS (OXY).</li>
-                    <li>Suminitro de detectores de gas metano ampliación SCI autogeneración. Campo LA CIRA-INFANTAS (OXY).</li>
-                    <li>Suministro de tableros nema 4x para SCI de proyecto de hornos Planta deshidratadora. Campo LA CIRA-INFANTAS (OXY).</li>
-                    <li>Suministro de cajas Nema 7 para Estación 1. Campo LA CIRA-INFANTAS (OXY).</li>
-                    <li>Suministro de tableros de casetas de inyección. Campo LA CIRA-INFANTAS (OXY).</li>
-                </ol>
+                &nbsp;
+                <ul class="bxslider">
+                    <li><img src="img/clientes/oxy.png" /></li>
+                    <li><img src="img/clientes/petrotiger.png" /></li>
+                    <li><img src="img/clientes/twm.png" /></li>
+                    <li><img src="img/clientes/cpe.png" /></li>
+                    <li><img src="img/clientes/pil.png" /></li>
+                    <li><img src="img/clientes/metalpar.png" /></li>
+                    <li><img src="img/clientes/asincro.png" /></li>
+                    <li><img src="img/clientes/vepica.png" /></li>
+                    <li><img src="img/clientes/petrominerales.png" /></li>
+                </ul>
             </div>
         </div>
       </div>
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        
+        $('.bxslider').bxSlider({
+            auto: true,
+            adaptiveHeight: true,
+            minSlides: 3,
+            maxSlides: 3,
+            slideMargin: 20,
+            slideWidth: 200
+        });   
+    </script>
   </body>
 </html>
