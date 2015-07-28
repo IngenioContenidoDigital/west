@@ -47,11 +47,13 @@
                 Realizamos consultoría para la ejecución y evaluación de proyectos bajo la guia PMI - Project Management Institute. Nuestro personal cuenta con certificación PMP - Project Management Professional - y experiencia en manejo de proyectos en el sector energético utilizando de manera eficiente las prácticas recomendadas en el estándar. Realizamos evaluación de proyectos mediante técnicas de valor ganado orientadas a obtener la mejor rentabilidad en los proyectos.
             </div>
             <p><span class="sub-titulo">Experiencia:</span></p>
+            <div class="ocultar">
             <h4>GERENCIA DE PROYECTOS</h4>
             <div>
                 <ol>
                     <li>Consultoría en Gerencia de Proyectos y Asistencia Técnica del Contrato Clci-0305 Obras de Control e Instrumentación en el Campo La Cira Infantas y área de influencia en el departamento de Santander (Servicio ejecutado desde 01 Febrero de 2014 hasta el 15 de Mayo de 2014)</li>
                 </ol>
+            </div>
             </div>
         </div>
       </div>
@@ -59,5 +61,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.sub-titulo').click(function(){
+            var estado = $(".ocultar").height();
+            var totalHeight = 0;
+           if(estado<=0){
+               $(".ocultar").children().each(function(){
+                totalHeight = totalHeight + $(this).outerHeight(true);
+                });
+               $('.ocultar').animate({height: totalHeight}, 500); 
+           }else{
+               $('.ocultar').animate({height: '0px'}, 500); 
+           }
+           
+        });
+    </script>
   </body>
 </html>

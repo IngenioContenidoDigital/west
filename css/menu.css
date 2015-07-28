@@ -88,6 +88,10 @@ li{ max-width: 82%; text-align: justify;}
     vertical-align: middle;
 }
 
+.sub-titulo:hover{
+    cursor:pointer;
+}
+
 .sub-titulo:before{
     position: absolute;
     display: block;
@@ -178,4 +182,9 @@ li{ max-width: 82%; text-align: justify;}
     border:solid #681427 2px;
     border-radius: 7px;
     padding: 20px;
+}
+
+.ocultar{
+    height: 0px;
+    overflow: hidden;
 }

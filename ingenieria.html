@@ -60,6 +60,7 @@
                 </p>
             </div>
             <p><span class="sub-titulo">Experiencia:</span></p>
+            <div class="ocultar">
             <h4>DISEÑOS E INGENIERÍA DE OBRAS DE INSTRUMENTACION Y CONTROL</h4>
             <div>
                 <ol>
@@ -72,11 +73,27 @@
                     <li>Informe de análisis consecuencias facilidades de la estación Mochuelo Sur Campo Rio Ariari - Meta.</li>
                 </ol>
             </div>
+            </div>
         </div>
       </div>
       </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.sub-titulo').click(function(){
+            var estado = $(".ocultar").height();
+            var totalHeight = 0;
+           if(estado<=0){
+               $(".ocultar").children().each(function(){
+                totalHeight = totalHeight + $(this).outerHeight(true);
+                });
+               $('.ocultar').animate({height: totalHeight}, 500); 
+           }else{
+               $('.ocultar').animate({height: '0px'}, 500); 
+           }
+           
+        });
+    </script>
   </body>
 </html>

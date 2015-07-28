@@ -47,9 +47,11 @@
                 <a href="contacto.php"><button type="button" class="btn btn-default navbar-btn">Contacto</button></a>
             </nav>
             <p><span class="sub-titulo">Mantenimiento:</span></p>
+            <div class="ocultar">
             <div class="menu-desc">
                 Realizamos mantenimiento predictivo, preventivo y correctivo a instrumentación de control de procesos tales como transmisores de presión, nivel, temperatura, flujo, vibración y válvulas de control y a equipos electrónicos del sector de petróleo y gas.
                 <p>Contamos con herramientas de software que permiten diagnosticar posibles fallas en cada uno de los dispositivos y ponemos a dispocisión personal capacitado en mantenimiento.</p>
+            </div>
             </div>
         </div>
       </div>
@@ -57,5 +59,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.sub-titulo').click(function(){
+            var estado = $(".ocultar").height();
+            var totalHeight = 0;
+           if(estado<=0){
+               $(".ocultar").children().each(function(){
+                totalHeight = totalHeight + $(this).outerHeight(true);
+                });
+               $('.ocultar').animate({height: totalHeight}, 500); 
+           }else{
+               $('.ocultar').animate({height: '0px'}, 500); 
+           }
+           
+        });
+    </script>
   </body>
 </html>

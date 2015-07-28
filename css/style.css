@@ -291,6 +291,10 @@ a{color: black;}
     margin-bottom: 7px;
 }
 
+#opciones div:hover{
+    cursor:pointer;
+}
+
 #opciones img{
     display: block;
     margin-left: auto;
