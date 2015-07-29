@@ -41,6 +41,12 @@ h3{ text-align: center; color:#681427}
 h4{ color:#681427; margin-top: 20px;margin-bottom:20px;}
 h5{ color:#681427; margin-top: 10px;margin-bottom:10px;}
 li{ max-width: 82%; text-align: justify;}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
 .pre-menu{
     margin-left: 0px;
     margin-top: 10px;
@@ -48,6 +54,11 @@ li{ max-width: 82%; text-align: justify;}
     min-height: 60px;
     background-image: url(../img/fondo-2.png);
     opacity: 0.3;
+    
+    animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
 }
 
 .menu{margin-bottom: 10px;}
@@ -86,6 +97,7 @@ li{ max-width: 82%; text-align: justify;}
     font-size: 1.3em;
     text-align:center;
     vertical-align: middle;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 .sub-titulo:hover{
@@ -102,6 +114,12 @@ li{ max-width: 82%; text-align: justify;}
     left: 116px;
     z-index: -1;
     opacity: 0.3;
+    
+    animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+    
 }
 
 .sub-titulo-2{
