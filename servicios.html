@@ -26,20 +26,26 @@
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
             <div class="seccion"><span style="top: 82px; text-shadow: 1px 3px 9px #330066;">Servicios Especializados</span></div>
             <div>
-                <p><span class="sub-titulo-2">SAFETY:</span></p>
+                <p><span class="sub-titulo-2" id="op1">SAFETY:</span></p>
+                <div class="ocultar2 op1">
                 <h5>ANÁLISIS DE RIESGO</h5>
                 <h5>ANÁLISIS DE SEGURIDAD FUNCIONAL MSA</h5>
-                <p><span class="sub-titulo-2">COMUNICACIONES O SURVEY DE COMUNICACIONES:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op2">COMUNICACIONES O SURVEY DE COMUNICACIONES:</span></p>
+                <div class="ocultar2 op2">
                 <h5>ANÁLISIS DE INTERFERENCIS</h5>
                 <h5>LÍNEA DE VISTA</h5>
                 <h5>ESTUDIO DE PROPAGACION</h5>
-                <p><span class="sub-titulo-2">PRE / COMMY ARRANQUE DE EQUIPO DE PROCESO:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op3">PRE / COMMY ARRANQUE DE EQUIPO DE PROCESO:</span></p>
+                <div class="ocultar2 op3">
                 <h5>TRATADORES</h5>
                 <h5>SEPARADORES</h5>
                 <h5>FILTRO DE CÁSCARA DE NUEZ</h5>
                 <h5>INTERCAMBIADORES DE CALOR</h5>
                 <h5>SCRUBBERS</h5>
                 <h5>KO DRUMS</h5>
+                </div>
             </div>
         </div>
         <div class="col-md-8">
@@ -89,6 +95,20 @@
                $('.ocultar').animate({height: '0px'}, 500); 
            }
            
+        });
+        
+        $('.sub-titulo-2').click(function(){
+            var el = $(this).attr('id');
+            var estado = $("."+el).height();
+            var totalHeight = 0;
+           if(estado<=0){
+               $("."+el).children().each(function(){
+                totalHeight = totalHeight + $(this).outerHeight(true);
+                });
+               $("."+el).animate({height: totalHeight}, 500); 
+           }else{
+               $("."+el).animate({height: '0px'}, 500); 
+           }
         });
     </script>
   </body>

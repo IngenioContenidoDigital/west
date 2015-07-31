@@ -26,31 +26,41 @@
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
             <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;">Obras</span></div>
             <div>
-                <p><span class="sub-titulo-2">INSTRUMENTACIÓN:</span></p>
+                <p><span class="sub-titulo-2" id="op1">INSTRUMENTACIÓN:</span></p>
+                <div class="ocultar2 op1">
                 <h5>CALIBRACIÓN</h5>
                 <h5>INSTALACIÓN</h5>
                 <h5>PRECOMISIONADO</h5>
                 <h5>COMISIONADO</h5>
                 <h5>PUESTA EN SERVICIO</h5>
-                <p><span class="sub-titulo-2">ELÉCTRICA:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op2">ELÉCTRICA:</span></p>
+                <div class="ocultar2 op2">
                 <h5>CONSTRUCCIÓN DE BANCO DE DUCTOS</h5>
                 <h5>TENDIDO DE COUNDUIT</h5>
                 <h5>INSTALACIÓN DE BANDEJAS PORTACABLE</h5>
                 <h5>TENDIDO DE CABLES Y ACCESORIOS ELÉCTRICOS</h5>
-                <p><span class="sub-titulo-2">COMUNICACIONES:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op3">COMUNICACIONES:</span></p>
+                <div class="ocultar2 op3">
                 <h5>INSTALACIÓN Y CONFIGURACIÓN DE ANTENAS Y RADIOS</h5>
                 <h5>INSTALACIÓN Y CONFIGURACIÓN DE SWITCHES DE COMUNICACIÓN</h5>
-                <p><span class="sub-titulo-2">CONTROL:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op4">CONTROL:</span></p>
+                <div class="ocultar2 op4">
                 <h5>CONFIGURACIÓN DE EQUIPOS DE CONTROL PLC, PAC, DCS</h5>
                 <h5>FAT (PRUEBAS DE ACEPTACIÓN EN FÁBRICA)</h5>
                 <h5>SAT (PRUEBAS DE ACEPTACIÓN EN SITIO)</h5>
                 <h5>SIT (PRUEBAS DE INTEGRACIÓN EN SITIO)</h5>
                 <h5>PUESTA EN SERVICIO</h5>
                 <h5>CONFIGURACIÓN Y DIAGNÓSTICO DE REDES INDUSTRIALES</h5>
-                <p><span class="sub-titulo-2">FUEGO Y GAS:</span></p>
+                </div>
+                <p><span class="sub-titulo-2" id="op5">FUEGO Y GAS:</span></p>
+                <div class="ocultar2 op5">
                 <h5>INSTALACIÓN DE CENTRALES DE NOTIFICACIÓN</h5>
                 <h5>CALIBRACIÓN E INSTALACIÓN DE SENSORES</h5>
                 <h5>PUESTA EN SERVICIO</h5>
+                </div>
             </div>
         </div>
         <div class="col-md-8">
@@ -104,6 +114,22 @@
            }
            
         });
+        
+        
+        $('.sub-titulo-2').click(function(){
+            var el = $(this).attr('id');
+            var estado = $("."+el).height();
+            var totalHeight = 0;
+           if(estado<=0){
+               $("."+el).children().each(function(){
+                totalHeight = totalHeight + $(this).outerHeight(true);
+                });
+               $("."+el).animate({height: totalHeight}, 500); 
+           }else{
+               $("."+el).animate({height: '0px'}, 500); 
+           }
+        });
+        
     </script>
   </body>
 </html>
