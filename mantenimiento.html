@@ -10,7 +10,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
-    <link href="css/menu.css" rel="stylesheet"> 
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +27,7 @@
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
-            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;">Mantenimiento</span></div>
+            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;top:130px;">Mantenimiento</span></div>
             <div>
                 <h3>&nbsp;</h3>
                 <h3>&nbsp;</h3>
@@ -42,6 +45,7 @@
                 <a href="suministros.html"><button type="button" class="btn btn-default navbar-btn">Suministros</button></a>
                 <a href="obras.html"><button type="button" class="btn btn-default navbar-btn">Obras</button></a>
                 <a href="servicios.html"><button type="button" class="btn btn-default navbar-btn">Servicios</button></a>
+                <button type="button" class="btn ">Mantenimiento</button>
                 <a href="gerencia.html"><button type="button" class="btn btn-default navbar-btn">Gerencia</button></a>
                 <a href="clientes.html"><button type="button" class="btn btn-default navbar-btn">Clientes</button></a>
                 <a href="contacto.php"><button type="button" class="btn btn-default navbar-btn">Contacto</button></a>
@@ -50,11 +54,26 @@
                 Realizamos mantenimiento predictivo, preventivo y correctivo a instrumentación de control de procesos tales como transmisores de presión, nivel, temperatura, flujo, vibración y válvulas de control y a equipos electrónicos del sector de petróleo y gas.
                 <p>Contamos con herramientas de software que permiten diagnosticar posibles fallas en cada uno de los dispositivos y ponemos a dispocisión personal capacitado en mantenimiento.</p>
             </div>
-            <p><span class="sub-titulo">Mantenimiento:</span></p>
+            <p><span class="sub-titulo">Experiencia:</span></p>
+            <p><span class="linea"></span></p>
+            
+            
+            <div>
+                &nbsp;
+                <ul>
+                </ul>
+                <ul class="bxslider">
+                    <li><img src="img/MANTENIMIENTO/1.jpg" /></li>
+                    <li><img src="img/MANTENIMIENTO/2.jpg" /></li>
+                    <li><img src="img/MANTENIMIENTO/3.jpg" /></li>
+                    <li><img src="img/MANTENIMIENTO/4.jpg" /></li>
+            </div>
+            
+            
         </div>
       </div>
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -71,6 +90,19 @@
            }
            
         });
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        
+        $('.bxslider').bxSlider({
+            auto: true,
+            adaptiveHeight: true,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 20,
+            slideWidth: 650
+        });   
     </script>
   </body>
 </html>

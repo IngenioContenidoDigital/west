@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="cache-control" content="no-cache">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>West Ingenieria</title>
+    <title>West Gerencia</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
-    <link href="css/menu.css" rel="stylesheet"> 
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,13 +27,15 @@
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
-            <div class="seccion"><span style="top: 82px; text-shadow: 1px 3px 9px #330066;">Gerencia de Proyectos:</span></div>
+            <div class="seccion"><span style="top: 115px; text-shadow: 1px 3px 9px #330066;">Gerencia de Proyectos:</span></div>
+            <!--
             <div>
                 <h4 style="text-align: center;">ADMINISTRACION DE CONTRATOS Y OBRAS DE CONSTRUCCIÓN</h4>
                 <h4 style="text-align: center;">UTILIZANDO METODOLOGIA PMP</h4>
                 <h4 style="text-align: center;">GESTIÓN DE COMPRA DE MATERIALES</h4>
                 <h4 style="text-align: center;">EVALUACIÓN DE PROYECTOS CON TÉCNICA DEL VALOR GANADO</h4>
             </div>
+            -->
         </div>
         <div class="col-md-8">
             <div class="pre-menu"></div>
@@ -40,6 +45,7 @@
                 <a href="obras.html"><button type="button" class="btn btn-default navbar-btn">Obras</button></a>
                 <a href="servicios.html"><button type="button" class="btn btn-default navbar-btn">Servicios</button></a>
                 <a href="mantenimiento.html"><button type="button" class="btn btn-default navbar-btn">Mantenimiento</button></a>
+                <button type="button" class="btn ">Gerencia</button>
                 <a href="clientes.html"><button type="button" class="btn btn-default navbar-btn">Clientes</button></a>
                 <a href="contacto.php"><button type="button" class="btn btn-default navbar-btn">Contacto</button></a>
             </nav>
@@ -47,6 +53,7 @@
                 Realizamos consultoría para la ejecución y evaluación de proyectos bajo la guia PMI - Project Management Institute. Nuestro personal cuenta con certificación PMP - Project Management Professional - y experiencia en manejo de proyectos en el sector energético utilizando de manera eficiente las prácticas recomendadas en el estándar. Realizamos evaluación de proyectos mediante técnicas de valor ganado orientadas a obtener la mejor rentabilidad en los proyectos.
             </div>
             <p><span class="sub-titulo">Experiencia:</span></p>
+            <p><span class="linea"></span></p>
             <div class="ocultar">
             <h4>GERENCIA DE PROYECTOS</h4>
             <div>
@@ -55,12 +62,38 @@
                 </ol>
             </div>
             </div>
+            
+            
+            <div>
+                &nbsp;
+                <ul class="bxslider">
+                    <li><h3>ADMINISTRACION DE CONTRATOS Y OBRAS DE CONSTRUCCIÓN</h3></li>
+                    <li><h3>UTILIZANDO METODOLOGIA PMP</h3></li>
+                    <li><h3>GESTIÓN DE COMPRA DE MATERIALES</h3></li>
+                    <li><h3>COMUNICACIONES</h3></li>
+                    <li><h3>EVALUACIÓN DE PROYECTOS CON TÉCNICA DEL VALOR GANADO</h3></li>
+            </div>
+            
+            <div>
+                &nbsp;
+                <ul>
+                </ul>
+                <ul class="bxslider">
+                    <li><img src="img/GERENCIA/1.png" /></li>
+                    <li><img src="img/GERENCIA/2.jpg" /></li>
+                    <li><img src="img/GERENCIA/3.png" /></li>
+            </div>
+            <div>
+                &nbsp;
+                <ul>
+                </ul>
+            </div>
+            
+            
         </div>
       </div>
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
     <script>
         $('.sub-titulo').click(function(){
             var estado = $(".ocultar").height();
@@ -75,6 +108,20 @@
            }
            
         });
+    </script>
+   
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        
+        $('.bxslider').bxSlider({
+            auto: true,
+            adaptiveHeight: true,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 20,
+            slideWidth: 650
+        });   
     </script>
   </body>
 </html>

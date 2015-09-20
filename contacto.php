@@ -70,7 +70,7 @@ if (isset($_POST["submit"])) {
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
-            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066;">Contacto</span></div>
+            <div class="seccion"><span style="text-shadow: 1px 3px 9px #330066; top:130px;">Contacto</span></div>
             <div>
                 <h3>&nbsp;</h3>
                 <h3>&nbsp;</h3>
@@ -89,6 +89,7 @@ if (isset($_POST["submit"])) {
                 <a href="mantenimiento.html"><button type="button" class="btn btn-default navbar-btn">Mantenimiento</button></a>
                 <a href="gerencia.html"><button type="button" class="btn btn-default navbar-btn">Gerencia</button></a>
                 <a href="clientes.html"><button type="button" class="btn btn-default navbar-btn">Clientes</button></a>
+                <button type="button" class="btn ">Contacto</button>
             </nav>
             <div>
                 &nbsp;

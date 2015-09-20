@@ -10,7 +10,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
-    <link href="css/menu.css" rel="stylesheet"> 
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <link href="js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" /> 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,20 +27,23 @@
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
-            <div class="seccion"><span style="top: 82px; text-shadow: 1px 3px 9px #330066;">Servicios Especializados</span></div>
+            <div class="seccion"><span style="top:115px; text-shadow: 1px 3px 9px #330066;">Servicios Especializados</span></div>
             <div>
                 <p><span class="sub-titulo-2" id="op1">SAFETY:</span></p>
+                <p><span class="linea2"></span></p>
                 <div class="ocultar2 op1">
                 <h5>ANÁLISIS DE RIESGO</h5>
                 <h5>ANÁLISIS DE SEGURIDAD FUNCIONAL MSA</h5>
                 </div>
                 <p><span class="sub-titulo-2" id="op2">COMUNICACIONES O SURVEY DE COMUNICACIONES:</span></p>
+                <p><span class="linea2"></span></p>
                 <div class="ocultar2 op2">
                 <h5>ANÁLISIS DE INTERFERENCIS</h5>
                 <h5>LÍNEA DE VISTA</h5>
                 <h5>ESTUDIO DE PROPAGACION</h5>
                 </div>
                 <p><span class="sub-titulo-2" id="op3">PRE / COMMY ARRANQUE DE EQUIPO DE PROCESO:</span></p>
+                <p><span class="linea2"></span></p>
                 <div class="ocultar2 op3">
                 <h5>TRATADORES</h5>
                 <h5>SEPARADORES</h5>
@@ -54,6 +60,7 @@
                 <a href="ingenieria.html"><button type="button" class="btn btn-default navbar-btn">Ingenieria</button></a>
                 <a href="suministros.html"><button type="button" class="btn btn-default navbar-btn">Suministros</button></a>
                 <a href="obras.html"><button type="button" class="btn btn-default navbar-btn">Obras</button></a>
+                <button type="button" class="btn ">Servicios</button>
                 <a href="mantenimiento.html"><button type="button" class="btn btn-default navbar-btn">Mantenimiento</button></a>
                 <a href="gerencia.html"><button type="button" class="btn btn-default navbar-btn">Gerencia</button></a>
                 <a href="clientes.html"><button type="button" class="btn btn-default navbar-btn">Clientes</button></a>
@@ -64,6 +71,7 @@
                 <p>Gracias a la experiencia de nuestro equipo de trabajo, mediante análisis de ingeniería, realizamos implementaciones y proveemos soluciones que optimizan su proceso.</p>
             </div>
             <p><span class="sub-titulo">Experiencia:</span></p>
+            <p><span class="linea"></span></p>
             <div class="ocultar">
             <h4>SUMINISTROS DE PERSONAL Y ORDENES DE SERVICIO</h4>
             <div>
@@ -76,10 +84,25 @@
                 </ol>
             </div>
             </div>
+            
+            
+            <div>
+                &nbsp;
+                <ul>
+                </ul>
+                <ul class="bxslider">
+                    <li><img src="img/SERVICIOS/1.jpg" /></li>
+                    <li><img src="img/SERVICIOS/2.jpg" /></li>
+                    <li><img src="img/SERVICIOS/3.jpg" /></li>
+                    <li><img src="img/SERVICIOS/4.jpg" /></li>
+                    <li><img src="img/SERVICIOS/5.jpg" /></li>
+            </div>
+            
+            
         </div>
       </div>
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -110,6 +133,20 @@
                $("."+el).animate({height: '0px'}, 500); 
            }
         });
+    </script>
+    
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        
+        $('.bxslider').bxSlider({
+            auto: true,
+            adaptiveHeight: true,
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 20,
+            slideWidth: 650
+        });   
     </script>
   </body>
 </html>

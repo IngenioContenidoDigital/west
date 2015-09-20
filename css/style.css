@@ -16,11 +16,12 @@ body{
 
 a{color: black;}
 .contenedor{
-    background: url(../img/fondo.png) repeat 20px 0;
+    
     margin: auto;
+	margin-left: 50px;
     overflow: hidden;
     width: auto;   
-    min-height: 650px;
+    min-height: 900px;
 }
 
 #logo{
@@ -158,6 +159,71 @@ a{color: black;}
     animation-timing-function: linear;
 }
 
+#contenedor2-ciclo2:before{
+    position:absolute;
+    display: table;
+    background-image: url(../img/ciclo3.png);
+    background-repeat: no-repeat;
+    content: "";
+    width: 580px;
+    height: 580px;
+    
+    -webkit-animation-name: spin3;
+    -webkit-animation-duration: 30000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin3;
+    -moz-animation-duration: 30000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin3;
+    -ms-animation-duration: 30000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin3;
+    animation-duration: 30000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    margin-left: -70px;
+    margin-top: -70px;
+}
+    
+    
+}
+
+@-ms-keyframes spin3 { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(360deg); 
+        }
+}
+@-moz-keyframes spin3 { 
+    from { 
+        -moz-transform: rotate(0deg); 
+    } to { 
+        -moz-transform: rotate(360deg); 
+    }
+}
+@-webkit-keyframes spin3 { 
+    from { 
+        -webkit-transform: rotate(0deg); 
+    } to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}
+@keyframes spin3 { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
 #flechas:before{
         position: absolute;
         content:"";
@@ -190,6 +256,7 @@ a{color: black;}
         
 }
 
+
 #menu{
     position:absolute;
     display: block;
@@ -201,7 +268,7 @@ a{color: black;}
 #menu div{
     position: relative;
     display: table;
-    background-image: url(../img/boton.png);
+    background-image: url(../img/boton3.png);
     background-repeat: no-repeat;
     text-align: center;
     vertical-align: middle;
@@ -215,30 +282,40 @@ a{color: black;}
 #menu div span{
     position: relative;
     display: table-cell;
-    width: 91px;
-    height: 72px;
+    width: 105px;
+    height: 83px;
     text-align: center;
     vertical-align: middle;
     font-size: 0.8em;
 }
 
-#opcion0{top:0px;left:108px;}
-#opcion1{top:0px;left:250px;}
-#opcion2{top:-5px;left:130px;}
-#opcion3{top:15px;left:230px;}
-#opcion4{top:-15px;left:50px;}
-#opcion5{top:-240px;left:0px;}
+#opcion0{top:0px;left:130px;}
+#opcion1{top:30px;left:280px;}
+#opcion2{top:-20px;left:130px;}
+#opcion3{top:20px;left:230px;}
+#opcion4{top: -60px;left: 50px;}
+#opcion5{top:-300px;left:-20px;}
 
 
 #contenedor-cert{
-    position: absolute;
-    display: table;
-    float: left;
-    margin-left: 1px;
-    top: 250px;
-    /*width: 222px;*/
-    height: 300px;
-    overflow: hidden;
+	position: absolute;
+	display: table;
+	float: left;
+	margin-left: 1px;
+	top: 250px;
+	/*width: 222px;*/
+	height: 300px;
+	overflow: hidden;
+}
+.botonactivo{
+	position: absolute;
+	display: table;
+	float: left;
+	margin-left: 1px;
+	top: 250px;
+	/*width: 222px;*/
+	height: 300px;
+	overflow: hidden;
 }
 
 #certificaciones{
@@ -269,11 +346,11 @@ a{color: black;}
 }
 
 #opciones{
-    position: relative;
-    display: inline-block;
-    float:right;
-    top: 30px;
-    margin-right: 20px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	top: 30px;
+	margin-right: 80px;
 }
 
 #opciones img:hover{
@@ -371,6 +448,8 @@ a{color: black;}
     #ciclo{transform: scale(1.3);}
     #contenedor-ciclo{margin-top: 80px;}
     /*#descripcion:hover{height: 130px;}*/
-    #contenedor-cert{width: 222px;}
+    #contenedor-cert{
+	width: auto;
+}
     #certificaciones{width: 200px;} 
 }
