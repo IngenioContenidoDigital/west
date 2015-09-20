@@ -65,7 +65,7 @@ if (isset($_POST["submit"])) {
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body style="background-image: url(img/metal.jpg);">
       <div class="container">
       <div class="row">
         <div class="col-md-4 contenedor2">
