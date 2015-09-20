@@ -87,6 +87,8 @@ li{ max-width: 82%; text-align: justify;}
 	background: url(../img/fondo.png) repeat 20px 0;
 	overflow: hidden;
 	padding-bottom: 40%;
+        position: relative;
+        height: 100%;
 }
 
 .sub-titulo{

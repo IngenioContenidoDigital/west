@@ -138,6 +138,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script>
+        $(document).ready(function(){
+            //alert($('.contenedor2').parent().height());
+            if($(window).width()>991){
+                $('.contenedor2').height('720px');   
+            }else{
+                $('.contenedor2').height('250px');
+            }
+        });
         
         $('.bxslider').bxSlider({
             auto: true,
