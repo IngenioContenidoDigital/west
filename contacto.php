@@ -66,7 +66,7 @@ if (isset($_POST["submit"])) {
     <![endif]-->
   </head>
   <body style="background-image: url(img/metal.jpg);">
-      <div class="container">
+      <div class="container" style="background-color:#FFF; opacity: 0.9;">
       <div class="row">
         <div class="col-md-4 contenedor2">
             <div class="logo2"><a href="index.html"><img src="img/Logo.png" width="80px" /></a></div>
